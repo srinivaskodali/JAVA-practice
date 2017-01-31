@@ -39,6 +39,8 @@ class ArrayBasic {
 		int[][] MultiArrayInt;
 		char[][] MultiArrayChar;
 		String[][] MultiArrayString;
+		/* The following is the valid initialization*/
+		String temp[][] = {{"Mr","Ms"},{"Tarak","Rakul"},{"M","F"}};
 
 		/* Intialization of arrays - memory will be allocated here*/
 		ArrayInt = new int[10];
@@ -47,6 +49,9 @@ class ArrayBasic {
 		MultiArrayInt = new int[3][5];
 		MultiArrayChar = new char[4][5];
 		MultiArrayString = new String[3][2];
+
+		/* strings cannot be assigned as following - this should be done during declaration*/
+		//MultiArrayString[][] = {{"Mr","Ms"},{"Tarak","Rakul"},{"M","F"}};
 
 		/* assign value to the arrays*/
 		for(int i=0; i < 10; i ++) {
@@ -68,6 +73,17 @@ class ArrayBasic {
 			for(int j = 0; j < 5; j++) {
 				MultiArrayInt[i][j] = i + j;
 				System.out.print( MultiArrayInt[i][j] + " ");
+			}
+			System.out.println();
+		}
+	
+		/* strings cannot assign like following once the initialization is done*/	
+		//MultiArrayString[3][2] = {{"Mr","Ms"},{"Tarak","Rakul"},{"M","F"}};
+
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 2; j++) {
+				MultiArrayString[i][j] = temp[i][j];
+				System.out.print( MultiArrayString[i][j] + " ");
 			}
 			System.out.println();
 		}
