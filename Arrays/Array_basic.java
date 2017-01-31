@@ -87,6 +87,16 @@ class ArrayBasic {
 			}
 			System.out.println();
 		}
+
+		System.out.println("Length of an array int is " + ArrayInt.length);
+		System.out.println("Length of an array char is " + ArrayChar.length);
+		System.out.println("Length of an array string is " + ArrayString.length);
+		/* length of a 2 dimensional array will be the value of no of rows*/
+		System.out.println("Length of an array multi int is " + MultiArrayInt.length);
+		System.out.println("Length of an array multi char is " + MultiArrayChar.length);
+		System.out.println("Length of an array multi string is " + MultiArrayString.length);
+		System.out.println("Length of an array temp is " + temp.length);
+
 	}
 
 }

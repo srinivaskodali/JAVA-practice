@@ -1,0 +1,40 @@
+Declaration of a variable is used before using it.
+
+There are 8 types of data types in JAVA
+
+    byte: 1-byte signed two's complement integer. Range is -128 - 127 (inclusive). cannot be unsigned.
+	Advantage : it can be used for saving memory.
+
+    short: 2-byte signed two's complement integer. Range is -32,768 - 32,767 (inclusive). cannot be unsigned.
+	Advantage : it can be used for saving memory.
+
+    int: 4 byte integer, Range for signed -2^31 to (2^31)-1. Range for unsigned 0 to (2^32)-1. 
+	Static methods like compareUnsigned, divideUnsigned etc have been added to the Integer class to support the arithmetic operations for unsigned integers.
+
+    long: 8 byte integer. The signed long range is -2^63 to (2^63)-1. An unsigned long range is 0 to 2^64-1.
+
+    float: The float data type is a single-precision 32-bit IEEE 754 floating point. Its range of values is beyond the scope of this discussion, but is specified in the Floating-Point Types, Formats, and Values section of the Java Language Specification. As with the recommendations for byte and short, use a float (instead of double) if you need to save memory in large arrays of floating point numbers. This data type should never be used for precise values, such as currency. For that, you will need to use the java.math.BigDecimal class instead. Numbers and Strings covers BigDecimal and other useful classes provided by the Java platform.
+
+    double: The double data type is a double-precision 64-bit IEEE 754 floating point. Its range of values is beyond the scope of this discussion, but is specified in the Floating-Point Types, Formats, and Values section of the Java Language Specification. For decimal values, this data type is generally the default choice. As mentioned above, this data type should never be used for precise values, such as currency.
+
+    boolean: The boolean data type has only two possible values: true and false. Use this data type for simple flags that track true/false conditions. This data type represents one bit of information, but its "size" isn't something that's precisely defined.
+
+    char: The char data type is a single 16-bit Unicode character. It has a minimum value of '\u0000' (or 0) and a maximum value of '\uffff' (or 65,535 inclusive). Unicode is a super set of ascii. so JAVA using 2 bytes of memory for a character.
+
+
+Default Values
+
+
+The following chart summarizes the default values for the above data types.
+Data Type 	Default Value (for fields)
+byte 	0
+short 	0
+int 	0
+long 	0L
+float 	0.0f
+double 	0.0d
+char 	'\u0000'
+String (or any object)   	null
+boolean 	false
+
+
